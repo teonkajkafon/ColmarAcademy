@@ -1,0 +1,297 @@
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: WhiteSmoke;
+}
+
+/* -------------------- Header -------------------- */
+
+header {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  background-color: WhiteSmoke;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.logo img {
+  height: 2rem;
+}
+
+.logo span:first-of-type {
+  font-weight: bold;
+}
+
+/* ------------------transitioning menu bar! -------- */
+
+/* -- header media queries -- */
+
+.main {
+  justify-content: flex-end;
+  margin-right: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-items: center;
+  height: 4rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.navlink {
+  position: relative;
+  overflow: hidden;
+  height: 4rem;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navlink .linkbox {
+  transition: all 0.3s ease-in-out;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.navlink:hover .linkbox {
+  margin-top: 2rem;     /* of box height */
+  color: purple;
+  transition: all 0.3s ease-in-out;
+}
+
+.navlink .iconbox {
+  height: 4rem;
+  position: absolute;
+  margin-top: -4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.navlink:hover .iconbox {
+  margin-top: -0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.iconbox img {
+  height: 1.5rem;
+  width: auto;
+}
+
+/* ---- jumbotron and call to action ---- */
+
+.section1 {
+  width: 100%;
+  display: inline-flex;
+  margin-top: 4rem;
+  justify-content: center;
+}
+
+.section1-img {
+  width: 60%;
+  display: block;
+}
+
+.section1-img img {
+  width: 100%;
+  height: auto;
+}
+
+/* ---
+.section2 {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.section2-img {
+  width: 60%;
+  display: inline-block;
+  padding: 2rem 1.5rem;
+}
+
+.section2-img img {
+  width: 100%;
+  height: auto;
+}
+
+.sliders {
+  display: inline-flex;
+  width: 40%;
+  padding-top: 1rem;
+  background-color: whitesmoke;
+}
+
+.slider {
+  display: inline-flex;
+  width: 100%;
+}
+
+.slider .photo-mobile {
+  display: none;
+}
+
+.slider .photo {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+  display: inline-flex;
+}
+
+.slider .photo img {
+  width: 100%;
+  height: auto;
+}
+
+.slider .text {
+  display: inline-flex;
+  width: 65%;
+}
+*/
+
+.section2 {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 2rem 0;
+}
+
+.section2-left {
+  width: 60%;
+  display: flex;
+  border: 5px solid pink;
+ }
+
+ .section2-leftbox {
+   width: 100%;
+  margin: 2rem 1.5rem;
+ }
+
+.section2-img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+
+}
+
+.section2-img img {
+  width: 100%;
+  height: auto;
+}
+
+.sliders {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  width: 40%;
+  padding-top: 1rem;
+  background-color: whitesmoke;
+}
+
+.slidercontent {
+  width: 100%;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.slidercontent .photo-mobile {
+  display: none;
+}
+
+.slidercontent .photo {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+  }
+
+.slidercontent .photo img {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.slidercontent .text {
+  border: 1px solid purple;
+  width: 65%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+h3, p, span {
+  border: 1px dashed black;
+  margin: 0;
+  padding: 0;
+}
+
+
+.section3 {
+  display: inline-flex;
+  flex-wrap: wrap;
+  background-color: #bfbfbf;
+  width: 100%;
+  align-items: center;
+}
+
+
+.courses {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 85%;
+	justify-content: space-around;
+padding: 1rem;
+}
+
+.course-name .photo img {
+    width: 100%;
+    height: auto;
+}
+.heading h2 {
+	font-weight: bold;
+	font-size: 1.5rem;
+	display: block;
+	text-align: center;
+	line-height: 1.5rem;
+	padding-top: 1rem;
+}
+.course-name {
+	width: 30%;
+	background-color: WhiteSmoke;
+margin-bottom: 1rem;
+
+.blah {
+  width: 100%;
+  justify-content: center;
+  clear: both;
+}
