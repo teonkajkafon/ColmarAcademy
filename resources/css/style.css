@@ -4,6 +4,7 @@ html {
   color: #333;
 }
 
+
 /* ------------------------------------------------------------------------------- */
 
 body {
@@ -11,6 +12,7 @@ body {
   padding: 0;
   background-color: WhiteSmoke;
 }
+
 
 /* -------------------- Header -------------------- */
 
@@ -44,7 +46,9 @@ header {
   font-weight: bold;
 }
 
+
 /* ------------------transitioning menu bar! -------- */
+
 
 /* -- header media queries -- */
 
@@ -74,13 +78,14 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-p {
+.linktxt {
   padding: 0;
   margin: 0;
 }
 
 .navlink:hover .linkbox {
-  margin-top: 2rem;     /* of box height */
+  margin-top: 2rem;
+  /* of box height */
   color: purple;
   transition: all 0.3s ease-in-out;
 }
@@ -105,78 +110,64 @@ p {
   width: auto;
 }
 
-/* ---- jumbotron and call to action ---- */
 
-.section1 {
-  width: 100%;
-  display: inline-flex;
+/* ---- First section and call to action ---- */
+
+.section-one {
   margin-top: 4rem;
-  justify-content: center;
-}
-
-.section1-img {
-  width: 60%;
-  display: block;
-}
-
-.section1-img img {
-  width: 100%;
-  height: auto;
-}
-
-/* ---
-.section2 {
-  width: 100%;
   display: inline-flex;
-  justify-content: center;
+  width: 100%;
 }
 
-.section2-img {
-  width: 60%;
-  display: inline-block;
+.section {
+  width: 100%;
   padding: 2rem 1.5rem;
 }
 
-.section2-img img {
+.flex {
+  display: flex;
+}
+
+.leftside {
+  width: 60%;
+  height: auto;
+  margin-right: 2rem;
+  align-items: flex-start;
+}
+
+.media-container {
+  width: 100%;
+}
+
+.media-container img,
+.media-container video {
   width: 100%;
   height: auto;
 }
 
-.sliders {
-  display: inline-flex;
+.rightside {
   width: 40%;
-  padding-top: 1rem;
-  background-color: whitesmoke;
+  margin-left: 2.5rem;
 }
 
-.slider {
-  display: inline-flex;
-  width: 100%;
+.rightside, .textbox {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
 }
 
-.slider .photo-mobile {
-  display: none;
+.textbox {
+  padding-bottom: 1rem;
 }
 
-.slider .photo {
-  width: 35%;
-  height: auto;
-  padding: 1rem;
-  display: inline-flex;
+.button {
+  width: 90%;
+  padding: 0.5rem 0;
+  background: #2c3e50 50%;
 }
 
-.slider .photo img {
-  width: 100%;
-  height: auto;
-}
 
-.slider .text {
-  display: inline-flex;
-  width: 65%;
-}
-*/
-
-.section2 {
+/* .section2 {
   width: 100%;
   display: inline-flex;
   justify-content: center;
@@ -207,11 +198,10 @@ p {
   height: auto;
 }
 
+*/
+
 .sliders {
-  display: flex;
-  flex-direction: column;
   align-content: stretch;
-  width: 40%;
   padding-top: 1rem;
   background-color: whitesmoke;
 }
@@ -220,7 +210,7 @@ p {
   width: 100%;
   border: 1px solid green;
   display: flex;
-  flex-direction: row;
+  /*flex-direction: row;*/
   align-items: center;
 }
 
@@ -232,7 +222,7 @@ p {
   width: 35%;
   height: auto;
   padding: 1rem;
-  }
+}
 
 .slidercontent .photo img {
   width: 100%;
@@ -254,44 +244,58 @@ h3, p, span {
   padding: 0;
 }
 
-
-.section3 {
+.section-three {
   display: inline-flex;
-  flex-wrap: wrap;
-  background-color: #bfbfbf;
   width: 100%;
   align-items: center;
 }
 
-
-.courses {
-  display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 85%;
-	justify-content: space-around;
-padding: 1rem;
+.section-heading {
+  background-color: #EAEBEC;
+  display: block;
+  text-align: center;
+  padding: 2rem 0;
 }
 
-.course-name .photo img {
-    width: 100%;
-    height: auto;
-}
-.heading h2 {
-	font-weight: bold;
-	font-size: 1.5rem;
-	display: block;
-	text-align: center;
-	line-height: 1.5rem;
-	padding-top: 1rem;
-}
-.course-name {
-	width: 30%;
-	background-color: WhiteSmoke;
-margin-bottom: 1rem;
-
-.blah {
-  width: 100%;
+.catalogue {
+  flex-wrap: wrap;
+  margin: 0 4.5rem;
   justify-content: center;
-  clear: both;
+  margin-bottom: 2rem;
+}
+
+.course {
+  background-color: white;
+  flex-direction: column;
+  width: 25%;
+  margin: 1rem;
+}
+
+.container-small {
+  overflow: hidden;
+}
+
+
+/*Text Formatting*/
+
+.description {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+}
+
+.description h4, .description p {
+  color: #9A9A9A
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-top: 2px solid #D8D8D8;
+  padding-top: 2rem;
+}
+
+.copyright {
+  padding-left: 1.5rem;
 }
