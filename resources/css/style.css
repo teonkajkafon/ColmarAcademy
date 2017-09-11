@@ -4,7 +4,6 @@ html {
   color: #333;
 }
 
-
 /* ------------------------------------------------------------------------------- */
 
 body {
@@ -13,6 +12,21 @@ body {
   background-color: WhiteSmoke;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
 
 /* -------------------- Header -------------------- */
 
@@ -26,7 +40,6 @@ header {
   width: 100%;
   padding: 0;
   margin: 0;
-  border-bottom: 1px solid #333;
 }
 
 .logo {
@@ -46,11 +59,7 @@ header {
   font-weight: bold;
 }
 
-
 /* ------------------transitioning menu bar! -------- */
-
-
-/* -- header media queries -- */
 
 .main {
   justify-content: flex-end;
@@ -74,6 +83,10 @@ header {
   justify-content: center;
 }
 
+.main .navlink:last-child {
+  margin-right: 0;
+}
+
 .navlink .linkbox {
   transition: all 0.3s ease-in-out;
 }
@@ -84,8 +97,7 @@ header {
 }
 
 .navlink:hover .linkbox {
-  margin-top: 2rem;
-  /* of box height */
+  margin-top: 2rem; /* of box height */
   color: purple;
   transition: all 0.3s ease-in-out;
 }
@@ -110,18 +122,30 @@ header {
   width: auto;
 }
 
-
 /* ---- First section and call to action ---- */
 
-.section-one {
+.section-div .one {
   margin-top: 4rem;
+}
+
+.section-div {
   display: inline-flex;
   width: 100%;
 }
 
+.section-div-4 {
+  display: inline-flex;
+  padding-left: 1.5rem;
+}
+
 .section {
   width: 100%;
-  padding: 2rem 1.5rem;
+  padding: 2rem 0 2rem 1.5rem;
+}
+
+.section-heading {
+  text-align: center;
+  margin: 0;
 }
 
 .flex {
@@ -131,7 +155,6 @@ header {
 .leftside {
   width: 60%;
   height: auto;
-  margin-right: 2rem;
   align-items: flex-start;
 }
 
@@ -147,58 +170,38 @@ header {
 
 .rightside {
   width: 40%;
-  margin-left: 2.5rem;
+  margin-left: 1.5rem;
 }
 
-.rightside, .textbox {
+.rightside,
+.textbox {
   flex-direction: column;
   justify-content: center;
   display: flex;
 }
 
-.textbox {
-  padding-bottom: 1rem;
+.first h1,
+.second h2 {
+  margin: 2rem 0 0;
+}
+
+.third h1,
+.fourth h1 {
+  margin: 2rem 0;
+}
+
+.first p,
+.second p {
+  margin: 0;
+  padding: 1.5rem 0 2rem;
 }
 
 .button {
   width: 90%;
   padding: 0.5rem 0;
+  text-align: center;
   background: #2c3e50 50%;
 }
-
-
-/* .section2 {
-  width: 100%;
-  display: inline-flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  margin: 2rem 0;
-}
-
-.section2-left {
-  width: 60%;
-  display: flex;
-  border: 5px solid pink;
- }
-
- .section2-leftbox {
-   width: 100%;
-  margin: 2rem 1.5rem;
- }
-
-.section2-img {
-  width: 100%;
-  height: auto;
-  display: inline-block;
-
-}
-
-.section2-img img {
-  width: 100%;
-  height: auto;
-}
-
-*/
 
 .sliders {
   align-content: stretch;
@@ -208,9 +211,7 @@ header {
 
 .slidercontent {
   width: 100%;
-  border: 1px solid green;
   display: flex;
-  /*flex-direction: row;*/
   align-items: center;
 }
 
@@ -231,30 +232,14 @@ header {
 }
 
 .slidercontent .text {
-  border: 1px solid purple;
   width: 65%;
   flex-direction: column;
   display: flex;
   justify-content: center;
 }
 
-h3, p, span {
-  border: 1px dashed black;
-  margin: 0;
-  padding: 0;
-}
-
-.section-three {
-  display: inline-flex;
-  width: 100%;
-  align-items: center;
-}
-
-.section-heading {
-  background-color: #EAEBEC;
-  display: block;
-  text-align: center;
-  padding: 2rem 0;
+.text * {
+  margin: 0.5rem 0;
 }
 
 .catalogue {
@@ -275,24 +260,21 @@ h3, p, span {
   overflow: hidden;
 }
 
+/* Text Formatting */
 
-/*Text Formatting*/
-
-.description {
-  width: 80%;
-  margin: 0 auto;
-  padding-bottom: 1.5rem;
+.course .description {
+  margin: 1rem 1rem 1.5rem;
+  align-items: flex-start;
 }
 
-.description h4, .description p {
-  color: #9A9A9A
+.description p {
+  color: #9a9a9a;
 }
 
 footer {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  border-top: 2px solid #D8D8D8;
   padding-top: 2rem;
 }
 
