@@ -41,15 +41,16 @@
 html {
   font-family: sans-serif;
   font-size: 16px;
-  color: #333;
+  color: hsla(0, 0%, 25%, 1);
 }
+
 
 /* ------------------------------------------------------------------------------- */
 
 body {
   margin: 0;
   padding: 0;
-  background-color: WhiteSmoke;
+  background-color: hsla(56, 59%, 95%, 0.9);
 }
 
 h1 {
@@ -73,7 +74,15 @@ h3 {
   font-family: 'Martel';
   font-style: normal;
   font-weight: 900;
-  text-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 0.3);
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-family: 'Martel';
+  font-style: normal;
+  font-weight: 900;
+  margin: 0.5rem 0;
 }
 
 p {
@@ -86,12 +95,12 @@ i {
   font-style: italic;
 }
 
-span :not(header),
-.textbox span {
+span :not(header), .textbox span {
   font-family: 'Muli';
   font-style: normal;
   font-weight: 700;
 }
+
 
 /* -------------------- Header -------------------- */
 
@@ -99,7 +108,7 @@ header {
   display: flex;
   align-items: center;
   height: 4rem;
-  background-color: WhiteSmoke;
+  background-color: hsla(56, 59%, 95%, 1);
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -128,6 +137,7 @@ header {
 .logo span:first-of-type {
   font-weight: 900;
 }
+
 
 /* ------------------transitioning menu bar! -------- */
 
@@ -167,8 +177,9 @@ header {
 }
 
 .navlink:hover .linkbox {
-  margin-top: 2rem; /* of box height */
-  color: purple;
+  margin-top: 2rem;
+  /* of box height */
+  color: hsla(268, 32%, 30%, 1);
   transition: all 0.3s ease-in-out;
 }
 
@@ -191,6 +202,7 @@ header {
   height: 1.5rem;
   width: auto;
 }
+
 
 /* ---- First section and call to action ---- */
 
@@ -218,6 +230,10 @@ header {
   margin: 0;
 }
 
+.cream {
+  background-color: hsla(56, 59%, 95%, 0.9);
+}
+
 .flex {
   display: flex;
 }
@@ -232,8 +248,7 @@ header {
   width: 100%;
 }
 
-.media-container img,
-.media-container video {
+.media-container img, .media-container video {
   width: 100%;
   height: auto;
   -webkit-box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.75);
@@ -251,6 +266,7 @@ header {
 
 .banner {
   justify-content: center;
+  color: hsla(56, 59%, 95%, 0.97);
 }
 
 .textbox {
@@ -268,34 +284,50 @@ header {
   margin-top: 0.5rem;
 }
 
-.first h1,
-.second h2 {
+.first h1, .second h2 {
   margin: 2rem 0 0;
 }
 
-.third h1,
-.fourth h1 {
+.third h1, .fourth h1 {
   margin: 2rem 0;
 }
 
-.first p,
-.second p {
+.first p, .second p {
   margin: 0;
   padding: 1.5rem 0 2rem;
 }
 
 .button {
-  width: 90%;
+  /*  width: 60%;
   padding: 0.5rem 0;
   text-align: center;
-  background: #2c3e50 50%;
+  background-color: hsla(0, 0%, 25%, 1); */
+  text-align: center;
+  display: inline-block;
+  width: 40%;
+  letter-spacing: 0.1rem;
+  background-image: linear-gradient(to top, hsla(0, 0%, 10%, 0.1), hsla(56, 59%, 100%, 0.4));
+  box-shadow: inset 0 -1px 0 hsla(0, 0%, 0%, 0.09), inset 0 1px 0 hsla(0, 0%, 100%, 0.04), 0 0 1px hsla(0, 0%, 0%, 0.3), 0 0 10px hsla(0, 0%, 0%, 0.1);
+  border-radius: 50px;
+  background-size: auto 200%;
+  background-position: 0 100%;
+  transition: background-position 0.15s;
+}
+
+.button:hover {
+  background-position: 0 80%;
+  background-image: linear-gradient(to top, hsla(0, 0%, 10%, .01), hsla(56, 59%, 95%, .4));
+  transition: all 0.3s;
+}
+
+.button:active {
+  background-position: 0 40%;
+  transform: translateY(3px);
+  transition: all 0.3s;
 }
 
 .sliders {
   align-content: stretch;
-  /*padding-top: 1rem;*/
-  background-color: whitesmoke;
-  overflow-y: visible;
 }
 
 .slidercontent {
@@ -306,7 +338,7 @@ header {
 }
 
 .slidercontent:hover {
-    background-color: hsla(268, 32%, 24%, 1);
+  background-color: hsla(268, 32%, 30%, 1);
 }
 
 .slidercontent .photo-mobile {
@@ -344,8 +376,9 @@ header {
 }
 
 .sectionclr {
-    background-color: hsla(268, 32%, 24%, 1);
+  background-color: hsla(268, 32%, 30%, 1);
 }
+
 .catalogue {
   flex-wrap: wrap;
   margin: 0 4.5rem;
@@ -354,7 +387,7 @@ header {
 }
 
 .course {
-  background-color: white;
+  background-color: hsla(56, 59%, 95%, 1);
   flex-direction: column;
   width: 25%;
   margin: 1rem;
@@ -383,12 +416,13 @@ header {
 }
 
 .description p {
-  color: #9a9a9a;
+  color: hsla(268, 32%, 30%, 1);
   margin: 0.5rem 0 0;
 }
 
 .section4 {
   padding-bottom: 2rem;
+  background-color: hsla(56, 59%, 95%, 0.9);
 }
 
 footer {
