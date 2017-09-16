@@ -44,7 +44,6 @@ html {
   color: hsla(0, 0%, 25%, 1);
 }
 
-
 /* ------------------------------------------------------------------------------- */
 
 body {
@@ -288,7 +287,12 @@ header {
   margin: 2rem 0 0;
 }
 
-.third h1, .fourth h1 {
+.third h1 {
+  line-height: 1;
+  margin: 0 0 1.5rem 0;
+}
+
+.fourth h1 {
   margin: 2rem 0;
 }
 
@@ -298,10 +302,6 @@ header {
 }
 
 .button {
-  /*  width: 60%;
-  padding: 0.5rem 0;
-  text-align: center;
-  background-color: hsla(0, 0%, 25%, 1); */
   text-align: center;
   display: inline-block;
   width: 40%;
@@ -334,11 +334,13 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  overflow-y: visible;
+  transition: all 0.3s;
 }
 
 .slidercontent:hover {
-  background-color: hsla(268, 32%, 30%, 1);
+  background-color: hsla(268, 32%, 30%, 0.5);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s;
 }
 
 .slidercontent .photo-mobile {
@@ -375,15 +377,41 @@ header {
   margin: 0.5rem 0;
 }
 
+.link a, .link:link a, .link:visited a {
+  text-decoration: none;
+  color: hsla(268, 32%, 30%, 1);
+  transition: all 0.3s;
+}
+
+.link:hover a {
+  text-decoration: none;
+  color: hsla(268, 32%, 30%, 0.9);
+  text-shadow: 1px 1px hsla(56, 59%, 80%, 0.3);
+  transition: all 0.3s;
+}
+
+.link:active a {
+  text-decoration: none;
+  text-shadow: 1px 1px hsla(56, 59%, 80%, 0.3);
+  transition: all 0.3s;
+}
+
+.section3 {
+  padding: 2rem 0;
+}
+
 .sectionclr {
   background-color: hsla(268, 32%, 30%, 1);
+}
+
+.third {
+  color: hsla(56, 59%, 95%, 0.97);
 }
 
 .catalogue {
   flex-wrap: wrap;
   margin: 0 4.5rem;
   justify-content: center;
-  margin-bottom: 2rem;
 }
 
 .course {
