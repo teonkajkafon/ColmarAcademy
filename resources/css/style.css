@@ -113,8 +113,6 @@ header {
   width: 100%;
   padding: 0;
   margin: 0;
-  -webkit-box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 0 7px 6px -6px rgba(0, 0, 0, 0.75);
 }
 
@@ -177,7 +175,6 @@ header {
 
 .navlink:hover .linkbox {
   margin-top: 2rem;
-  /* of box height */
   color: hsla(268, 32%, 30%, 1);
   transition: all 0.3s ease-in-out;
 }
@@ -185,7 +182,7 @@ header {
 .navlink .iconbox {
   height: 4rem;
   position: absolute;
-  margin-top: -4.5rem;
+  margin-top: -7rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,7 +198,6 @@ header {
   height: 1.5rem;
   width: auto;
 }
-
 
 /* ---- First section and call to action ---- */
 
@@ -250,8 +246,6 @@ header {
 .media-container img, .media-container video {
   width: 100%;
   height: auto;
-  -webkit-box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.75);
 }
 
@@ -361,8 +355,6 @@ header {
   width: 100%;
   height: auto;
   display: flex;
-  -webkit-box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.75);
 }
 
@@ -419,8 +411,6 @@ header {
   flex-direction: column;
   width: 25%;
   margin: 1rem;
-  -webkit-box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 8px 8px 8px -6px rgba(0, 0, 0, 0.75);
 }
 
