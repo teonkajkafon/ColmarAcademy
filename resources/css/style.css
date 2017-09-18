@@ -562,6 +562,12 @@ header {
   transition: all 0.25s ease-in-out;
 }
 
+.section3 .course:active {
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+  transition: all 0.25s ease-in-out;
+}
+
 .course .description {
   margin: 1rem 1rem 1.5rem;
   align-items: flex-start;
