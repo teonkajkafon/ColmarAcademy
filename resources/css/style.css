@@ -382,7 +382,7 @@ header {
   border-radius: 50px;
   background-size: auto 200%;
   background-position: 0 100%;
-  transition: background-position 0.15s;
+  transition: all 0.15s;
 }
 
 .button:hover {
