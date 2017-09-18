@@ -575,6 +575,7 @@ header {
 
 .description h3 {
   margin: 0;
+  text-decoration: none;
 }
 
 .description p:first-of-type {
