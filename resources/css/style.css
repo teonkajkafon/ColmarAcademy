@@ -636,6 +636,7 @@ header {
 
   .course.mobile a {
     color: hsla(56, 59%, 95%, 0.97);
+    text-decoration: none;
   }
 }
 
