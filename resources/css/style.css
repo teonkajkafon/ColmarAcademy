@@ -633,6 +633,10 @@ header {
     background-color: hsla(268, 32%, 30%, 1);
     color: hsla(56, 59%, 95%, 0.97);
   }
+
+  .course.mobile a {
+    color: hsla(56, 59%, 95%, 0.97);
+  }
 }
 
 .section4 {
